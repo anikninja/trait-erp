@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.code-edit {
+			width: calc( 100% - 250px );
+			height: 250px;
+			border: 1px solid red;
+			margin: 15px auto;
+		}
+		.code-edit .store { display: none; }
+		.code-edit .stage {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="code-edit" data-type="html" id="e1">
+		<textarea class="store">&lt;div class="code-edit" data-type="html" id="e1"&gt;
+    &lt;textarea class="store"&gt;&lt;/textarea&gt;
+    &lt;div class="stage"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="code-edit" data-type="html" id="e2"&gt;
+    &lt;textarea class="store"&gt;&lt;/textarea&gt;
+    &lt;div class="stage"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="code-edit" data-type="css" id="e3"&gt;
+    &lt;textarea class="store"&gt;&lt;/textarea&gt;
+    &lt;div class="stage"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+		<div class="stage"></div>
+	</div>
+	<div class="code-edit" data-type="html" id="e2">
+		<textarea class="store"></textarea>
+		<div class="stage"></div>
+	</div>
+	<div class="code-edit" data-type="css" id="e3">
+		<textarea class="store">* {
+	box-sizing: border-box;
+}
+.code-edit {
+	width: calc( 100% - 250px );
+	height: 250px;
+	border: 1px solid red;
+	margin: 15px auto;
+}
+.code-edit .store { display: none; }
+.code-edit .stage {
+	width: 100%;
+	height: 100%;
+}</textarea>
+		<div class="stage"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script>var require = { paths: { 'vs': 'min/vs' } };</script>
+	<script src="min/vs/loader.js"></script>
+	<script src="min/vs/editor/editor.main.nls.js"></script>
+	<script src="min/vs/editor/editor.main.js"></script>
+	<script>
+		(function($) {
+			"use strict";
+			require(['vs/editor/editor.main'], function () {
+				var editors = $('.code-edit');
+				var editorOpt = {
+						tabCompletion: 'on',
+						theme: 'vs-dark',
+						model: null,
+					};
+				editors.each( function() {
+					var self = $(this),
+						type = self.data('type'),
+						stage = self.find('.stage').get(0);
+					// only html & css support.
+					if ( 'html' === type || 'css' === type ) {
+						var editor = monaco.editor.create( stage, editorOpt ),
+							model = monaco.editor.createModel( self.find('.store').text(), type );
+						editor.setModel(model);
+						//monaco.editor.setTheme( 'vs-dark' );
+						self.data( 'editor', editor )
+					}
+				});
+				// home page structure
+				// var home = {
+				// 	sidebar: {
+				// 		supports: [ 'daily_deals', 'products', 'custom' ]
+				// 	},
+				// 	main: {
+				// 		supports: [
+				// 			'slider',
+				// 			// 'page',
+				// 			'categories',
+				// 			'products',
+				// 			'new_products',
+				// 			'most_viewed',
+				// 			'trending_products',
+				// 			'daily_deals',
+				// 			'featured_products',
+				// 			'custom',
+				// 			'brand_slider',
+				// 		],
+				// 	},
+				// 	footerTop: {
+				// 		supports: [
+				// 			// 'page',
+				// 			'categories',
+				// 			'products',
+				// 			'new_products',
+				// 			'most_viewed',
+				// 			'trending_products',
+				// 			'daily_deals',
+				// 			'featured_products',
+				// 			'custom',
+				// 			'brand_slider',
+				// 		]
+				// 	},
+				// 	footerMain: {
+				// 		supports: [
+				// 			'custom',
+				// 			'urlList'
+				// 		]
+				// 	},
+				// 	footerBottom: {
+				// 		supports: [
+				// 			'copyright',
+				// 		]
+				// 	},
+				// };
+				// var sections = {
+				// 	slider : { type: 'bool', yes: 'Show', no: 'Hide' },
+				// 	page : { type: 'number', multiple: false, },
+				// 	categories : { type: 'number', multiple: true, },
+				// 	products : { type: 'number', multiple: true, }
+				// 	new_products : { type: 'number', multiple: false, },
+				// 	most_viewed : { type: 'number', multiple: false, extra: [ { type: 'bool', yes: 'Show', no: 'Hide' } ] },
+				// 	trending_products : { type: 'number', multiple: false, },
+				// 	// promo_products
+				// 	daily_deals : { type: 'number', multiple: false, },
+				// 	featured_products : { type: 'number', multiple: false, },
+				// 	custom : { type: 'html', multiple : null },
+				// 	brand_slider: { type: 'number', multiple: false, }
+				// 	copyright: { type: 'html', multiple : null },
+				// 	urlList : {
+				// 		type: null, multiple: true, extra: [
+				// 			{ type: 'text', label: 'Label' },
+				// 			{ type: 'url', label: 'Url' }
+				// 		]
+				// 	}
+				// };
+				$(window).on('beforeunload', function(){
+					var changed = false;
+					editors.each( function() {
+						var self = $(this), editor = self.data( 'editor' ), store = self.find( '.store' );
+						if ( store.text() !== editor.getValue() ) {
+							changed = true;
+							store.text( editor.getValue() )
+						}
+					} );
+					if ( changed ) {
+						return 'Changes that you made may not be saved.';
+					}
+				});
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>

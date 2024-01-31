@@ -1,0 +1,401 @@
+{
+  "show_sidebar": 1,
+  "show_slider": 1,
+  "show_brands": 1,
+  "special_products": [
+	63, 64, 68, 72, 75, 291
+  ],
+  "slider-side": [
+	{
+	  "link": "#",
+	  "banner": "https://coloursports.com/themes/coloursports/shop/assets/images/banners/slider-side-banner1.jpg",
+	  "alt": ""
+	},
+	{
+	  "link": "#",
+	  "banner": "https://coloursports.com/themes/coloursports/shop/assets/images/banners/slider-side-banner2.jpg",
+	  "alt": ""
+	}
+  ],
+  "sections": [
+	{
+	  "priority": 1,
+	  "label": "",
+	  "type": "custom",
+	  "class": "",
+	  "data": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\"><div class=\"banners banners3\"><div class=\"banner\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner6.jpg\" alt=\"image\"></a></div></div></div>"
+	},
+	{
+	  "priority": 2,
+	  "label": "Daily Deals",
+	  "type": "daily_deals",
+	  "showSub": 1,
+	  "max": 16,
+	  "class": ""
+	},
+	{
+	  "priority": 3,
+	  "label": "",
+	  "type": "custom",
+	  "class": "",
+	  "data": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 col_w52p col-style\"><div class=\"banners banners6\"><div class=\"banner\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner7.jpg\" alt=\"image\"></a></div></div></div>"
+	},
+	{
+	  "priority": 4,
+	  "label": "Trending items",
+	  "type": "trending_products",
+	  "max": 16,
+	  "ids": "",
+	  "class": ""
+	},
+	{
+	  "priority": 5,
+	  "label": "",
+	  "type": "custom",
+	  "class": "",
+	  "data": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\"><div class=\"banners banners7\"><div class=\"row\"><div class=\"banner1 col-lg-3 col-md-3 col-sm-12 col-xs-12\"><div class=\"b1\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner1.jpg\" alt=\"image\"></a></div><div class=\"b2\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner2.jpg\" alt=\"image\"></a></div></div><div class=\"banner2 col-lg-6 col-md-6 col-sm-12 col-xs-12\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner3.jpg\" alt=\"image\"></a></div><div class=\"banner3 col-lg-3 col-md-3 col-sm-12 col-xs-12\"><div class=\"b1\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner4.jpg\" alt=\"image\"></a></div><div class=\"b2\"><a href=\"#\"><img src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/banner5.jpg\" alt=\"image\"></a></div></div></div></div></div>"
+	},
+	{
+	  "priority": 6,
+	  "label": "New items",
+	  "type": "new_products",
+	  "max": 16,
+	  "ids": "",
+	  "class": ""
+	}
+  ],
+  "sidebar_sections": [
+	{
+	  "label": "",
+	  "type": "custom",
+	  "class": "",
+	  "data": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\"><div class=\"banners banners2\"><div class=\"banner\"><a href=\"#\"><img class=\"lazyautosizes lazyloaded\" src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/sidebar-banner1.jpg\" alt=\"banner\"></a></div></div></div>"
+	},
+	{
+	  "label": "Latest products",
+	  "type": "new_products",
+	  "max": 16,
+	  "ids": "",
+	  "class": ""
+	},
+	{
+	  "label": "",
+	  "type": "custom",
+	  "class": "",
+	  "data": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 col_aaas col-style\"><ul class=\"block-infos\"><li class=\"info1\"><div class=\"inner\"><i class=\"fa fa-file-text-o\"></i><div class=\"info-cont\"><a href=\"#\">free delivery</a><p>On order over $49.86</p></div></div></li><li class=\"info2\"><div class=\"inner\"><i class=\"fa fa-shield\"></i><div class=\"info-cont\"><a href=\"#\">order protecttion</a><p>secured information</p></div></div></li><li class=\"info3\"><div class=\"inner\"><i class=\"fa fa-gift\"></i><div class=\"info-cont\"><a href=\"#\">promotion gift</a><p>special offers!</p></div></div></li><li class=\"info4\"><div class=\"inner\"><i class=\"fa fa-money\"></i><div class=\"info-cont\"><a href=\"#\">money back</a><p>return over 30 days</p></div></div></li></ul></div>"
+	},
+	{
+	  "label": "",
+	  "type": "custom",
+	  "class": "",
+	  "data": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 col_x1cl col-style\"><div class=\"banners banners2\"><div class=\"banner\"><a href=\"#\"><img class=\"lazyautosizes lazyloaded\" src=\"https://coloursports.com/themes/coloursports/shop/assets/images/banners/sidebar-banner2.jpg\" alt=\"banner\"></a></div></div></div>"
+	},
+	{
+	  "label": "Top Rated",
+	  "type": "new_products",
+	  "max": 16,
+	  "ids": "",
+	  "class": ""
+	}
+  ],
+  "footer": {
+	"address": [
+	  {
+		"icon": "map-marker",
+		"content": "<a href=\"https://www.google.com/maps/search/Vertical+Building,+Priyanka+City,+Bottala,+Jasimuddin,+Dhaka+-1230/@23.867101,90.3807205,17.82z\">Vertical Building,Priyanka City,Bottala, Jasimuddin,Dhaka -1230</a>"
+	  },
+	  {
+		"icon": "mobile",
+		"content": "<a href=\"tel:+8802123456\">+ (880) 2123-456</a> / + (888) 456-7890"
+	  },
+	  {
+		"icon": "envelope",
+		"content": "<a href=\"mailto:info@grocerant.com.bd\">info@grocerant.com.bd</a>"
+	  }
+	],
+	"features": [
+	  {
+		"icon": "icon-truck",
+		"text": "We ship worldwide"
+	  },
+	  {
+		"icon": "icon-support",
+		"text": "call +1 800 789 0000"
+	  },
+	  {
+		"icon": "icon-money",
+		"text": "Money Back Guarantee"
+	  },
+	  {
+		"icon": "icon-return",
+		"text": "30 days return"
+	  }
+	],
+	"thumbs": [
+	  {
+		"url": "#",
+		"title": "",
+		"thumb": "https://coloursports.com/themes/grocerant/shop/assets/images/brands/app-store.png"
+	  },
+	  {
+		"url": "#",
+		"title": "",
+		"thumb": "https://coloursports.com/themes/grocerant/shop/assets/images/brands/google-play.png"
+	  }
+	]
+  },
+  "main_menu": {
+	"14ce87": {
+	  "id": "14ce87",
+	  "label": "Home",
+	  "controller": "",
+	  "method": "",
+	  "slug": "/",
+	  "target": "",
+	  "class": "",
+	  "sort": "1",
+	  "tip": "",
+	  "parent": ""
+	},
+	"415ce5": {
+	  "id": "415ce5",
+	  "label": "Bakery Food",
+	  "controller": null,
+	  "method": null,
+	  "slug": "category/bakery-food",
+	  "target": "",
+	  "class": "new-menu",
+	  "sort": "2",
+	  "tip": "New",
+	  "parent": ""
+	},
+	"69b08f": {
+	  "id": "69b08f",
+	  "label": "Fruits",
+	  "controller": null,
+	  "method": null,
+	  "slug": "category/fruits",
+	  "target": "",
+	  "class": "",
+	  "sort": "4",
+	  "tip": "",
+	  "parent": ""
+	},
+	"fdc3e9": {
+	  "id": "fdc3e9",
+	  "label": "Meat & Fish",
+	  "controller": null,
+	  "method": null,
+	  "slug": "category/meat-fish",
+	  "target": "",
+	  "class": "",
+	  "sort": "5",
+	  "tip": "",
+	  "parent": ""
+	},
+	"0382b9": {
+	  "id": "0382b9",
+	  "label": "Grocery",
+	  "controller": null,
+	  "method": null,
+	  "slug": "category/grocery",
+	  "target": "",
+	  "class": "hot-menu",
+	  "sort": "7",
+	  "tip": "Popular",
+	  "parent": ""
+	},
+	"921aa6": {
+	  "id": "921aa6",
+	  "label": "Baby care",
+	  "controller": null,
+	  "method": null,
+	  "slug": "category/baby-care",
+	  "target": "",
+	  "class": "new-menu",
+	  "sort": "8",
+	  "tip": "New",
+	  "parent": ""
+	}
+  },
+  "footer_links": [
+	{
+	  "label": "Top Categories",
+	  "links": [
+		{
+		  "label": "Cycling",
+		  "slug": "category/cycling"
+		},
+		{
+		  "label": "Fishing",
+		  "slug": "category/fishing"
+		},
+		{
+		  "label": "Golf",
+		  "slug": "category/golf"
+		},
+		{
+		  "label": "Gym & Fitness",
+		  "slug": "category/gym-fitness-equipment"
+		},
+		{
+		  "label": "Hunting",
+		  "slug": "category/hunting"
+		},
+		{
+		  "label": "Running Shoes",
+		  "slug": "category/running-shoes"
+		}
+	  ]
+	},
+	{
+	  "label": "Editor's Peak Category",
+	  "links": [
+		{
+		  "label": "Sports Bags",
+		  "slug": "category/sports-bags"
+		},
+		{
+		  "label": "Sportswear",
+		  "slug": "category/sportswear"
+		},
+		{
+		  "label": "Swimming",
+		  "slug": "category/swimming"
+		},
+		{
+		  "label": "Tennis",
+		  "slug": "category/tennis"
+		},
+		{
+		  "label": "Fishing Rods",
+		  "slug": "category/fishing/fishing-rods"
+		},
+		{
+		  "label": "Fishing Rope",
+		  "slug": "category/fishing/fishing-rope"
+		}
+	  ]
+	},
+	{
+	  "label": "Important Links",
+	  "links": [
+		{
+		  "label": "About Us",
+		  "slug": "page/about-us"
+		},
+		{
+		  "label": "Contact Us",
+		  "slug": "#",
+		  "class": "contact-us"
+		},
+		{
+		  "label": "Privacy Policy",
+		  "slug": "page/privacy-policy"
+		},
+		{
+		  "label": "Refund Policy",
+		  "slug": "page/refund-policy"
+		},
+		{
+		  "label": "Shipping Policy",
+		  "slug": "page/delivery-shipping-policy"
+		},
+		{
+		  "label": "Warranty Policy",
+		  "slug": "page/warranty-policy"
+		}
+	  ]
+	}
+  ],
+  "footer_bottom_links": [
+	{
+	  "label": "Online Shopping",
+	  "slug": "#"
+	},
+	{
+	  "label": "Promotions",
+	  "slug": "#"
+	},
+	{
+	  "label": "Privacy Policy",
+	  "slug": "#"
+	},
+	{
+	  "label": "Site Map",
+	  "slug": "#"
+	},
+	{
+	  "label": "Orders and Returns",
+	  "slug": "#"
+	},
+	{
+	  "label": "Help",
+	  "slug": "#"
+	},
+	{
+	  "label": "Contact Us",
+	  "slug": "#"
+	},
+	{
+	  "label": "Support",
+	  "slug": "#"
+	},
+	{
+	  "label": "Most Populars",
+	  "slug": "#"
+	},
+	{
+	  "label": "New Arrivals",
+	  "slug": "#"
+	},
+	{
+	  "label": "Special Products",
+	  "slug": "#"
+	},
+	{
+	  "label": "Manufacturers",
+	  "slug": "#"
+	},
+	{
+	  "label": "Shipping",
+	  "slug": "#"
+	},
+	{
+	  "label": "Payments",
+	  "slug": "#"
+	},
+	{
+	  "label": "Returns",
+	  "slug": "#"
+	},
+	{
+	  "label": "Refunds",
+	  "slug": "#"
+	},
+	{
+	  "label": "Warantee",
+	  "slug": "#"
+	},
+	{
+	  "label": "Promotions",
+	  "slug": "#"
+	},
+	{
+	  "label": "Customer Service",
+	  "slug": "#"
+	},
+	{
+	  "label": "Our Stores",
+	  "slug": "#"
+	},
+	{
+	  "label": "Discount",
+	  "slug": "#"
+	},
+	{
+	  "label": "Checkout",
+	  "slug": "#"
+	}
+  ]
+}
